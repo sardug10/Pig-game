@@ -35,7 +35,7 @@ document.querySelector('.btn-roll').addEventListener('click',function(){
         //Change the image
         var diceDOM = document.querySelector('.dice');
         diceDOM.style.display = 'block';
-        diceDOM.src = '/pig game/dice-' + dice + '.png';
+        diceDOM.src = 'pig game/dice-' + dice + '.png';
         
         //update the score of current player if dice number is not 1
         if(dice !== 1){
