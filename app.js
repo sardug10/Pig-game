@@ -44,8 +44,15 @@ document.querySelector('.btn-roll').addEventListener('click',function(){
             document.querySelector('#current-'+ activePlayer).textContent = roundScore;
         } else {
             //make the score 0 and change the active player
+            document.querySelector(".btn-roll").style.pointerEvents = "none";
+
+            setTimeout(() => {
             nextPlayer();
-        }
+            setTimeout(() => {
+              document.querySelector(".btn-roll").style.pointerEvents = "all";
+            }, 100);
+          }, 1000);
+            }
     }    
 });
 
